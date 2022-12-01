@@ -1,4 +1,4 @@
-# BG Thoughts And Quotes. #
+# Algorithms in Go #
 
 
 
