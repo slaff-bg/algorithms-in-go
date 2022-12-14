@@ -1,5 +1,8 @@
 # Algorithms in Go #
 
+Golang practice exercises based on the [Go Courses by Jon Calhoun](https://courses.calhoun.io/courses) lectures.
+
+The condition of each exercise is found as a comment in the file itself.
 
 
 
@@ -7,36 +10,55 @@
 
 - [Golang](https://go.dev/dl/) version go1.19.
 
-&#x1F4CC; &nbsp; *<sub>Versions reflect the current state of the used technologies.</sub>*
+&#x1F4CC; &nbsp; *<sub>The version reflects the current state of the technology used during the exercises.</sub>*
+
 
 
 ## How do I get set up? ##
 
+All that needs to be done is to ...
+* clone the repository locally
+* execute init comand
+```sh
+  go mod init slaff-bg/algorithms-in-go
 
+  go mod tidy
+```
+
+
+### By Using Docker Container ###
+
+It will be added...
 
 
 ## How to run tests? ##
 
 * Open a CLI.
-* Go to the directory of your local copy.
+* Go to the root directory of your local copy.
 * Clean the cache using the following command:
   
   ```sh
     go clean -testcache
   ```
+  
+  * Run all tests
 
-### Run all tests. ###
+    ```sh
+      go test ./...
+    ```
+  
+  * Run separate tests from the root directory
 
-```sh
-go test ./...
-```
+    ```sh
+      go test ./module_01/08_find_two_that_sum/ -run=FindTwoThatSumByCriteriaXt
+    ```
 
-### Run the test in a concrete directory. ###
+  * ... or simply go to the directory of your chosen algorithm and run the individual test
 
-
-
-
-### Run a separate test. ###
+    ```sh
+      cd module_01/08_find_two_that_sum
+      go test -run=TestFindTwoThatSum
+    ```
 
 
 
