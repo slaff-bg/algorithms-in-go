@@ -1,5 +1,7 @@
 package findtwothatsum
 
+// Find two numbers in a list that sum to a given amount
+//
 // FindTwoThatSum will look for two numbers in the provided
 // numbers slice that sum up to the sum argument. It will then
 // return the indices of each of these numbers.
