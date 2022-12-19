@@ -1,5 +1,8 @@
 package factoranumber
 
+// Prime Factorization Algorithm
+// (алгоритъм за разлагане на прости множители)
+
 // Factor takes in a list of primes and a number and factors that number with
 // the provided primes.
 //
