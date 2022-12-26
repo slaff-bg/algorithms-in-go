@@ -2,7 +2,7 @@ package stringreversing
 
 import "strings"
 
-// Search Num in slice of nums.
+// String reversing.
 // = = = = = = = = = = = = = = = = = = = =
 
 func Reverse(word string) string {

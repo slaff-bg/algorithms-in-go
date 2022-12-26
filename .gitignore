@@ -71,5 +71,5 @@ Thumbs.db
 go.work
 
 # The go.mod and go.sum files
-*.mod
+# *.mod
 *.sum

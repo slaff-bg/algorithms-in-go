@@ -5,6 +5,25 @@ Golang practice exercises based on the [Go Courses by Jon Calhoun](https://cours
 The condition of each exercise is found as a comment in the file itself.
 
 
+## Exercises' Content ##
+
+* Module 1
+  * [Search Number In LIst](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/01_NumInList)
+  * [Sum Numbers In LIst](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/02_Sum)
+  * [String Reversing](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/03_string_reversing)
+  * [Classic Fizz/Buzz Problem](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/04_clasic_fizz_buzz_problem)
+  * [Decimal To Another Base Conversion](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/05_decimal_to_another_base)
+  * [Base To Decimal Conversion](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/06_base_to_decimal)
+  * [Any Base To Any Base Conversion](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/07_any_base_to_any_base)
+  * [Two Numbers That Sum To A Given Amount](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/08_find_two_that_sum)
+  * [Prime Factorization](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/09_factor_a_number)
+  * [Fibonacci Numbers](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/10_fibonacci_numbers)
+  * [Greatest Common Divisior (GCD)](https://github.com/slaff-bg/algorithms-in-go/tree/main/module_01/11_greatest_common_divisior)
+
+
+* Module 2
+  * [Big O]()
+
 
 ## Dependencies ##
 
@@ -41,25 +60,37 @@ It will be added...
     go clean -testcache
   ```
   
-  * Run all tests
+* Run all tests
 
-    ```sh
-      go test ./...
-    ```
+  ```sh
+    go test ./...
+  ```
   
   * Run separate tests from the root directory
-
     ```sh
+      # (sample)
       go test ./module_01/08_find_two_that_sum/ -run=FindTwoThatSumByCriteriaXt
     ```
 
   * ... or simply go to the directory of your chosen algorithm and run the individual test
 
     ```sh
+      # (sample)
       cd module_01/08_find_two_that_sum
       go test -run=TestFindTwoThatSum
     ```
 
+* Benchmarks
+  
+  To run a benchmark instead of a test, execute the following commands.
+  
+    ```sh
+      # (sample)
 
+      # Switch to the required directory
+      cd module_01/11_greatest_common_divisior
 
+      # Execute the desired benchmark
+      go test -bench=BenchmarkGCDNoDivisionAlt
+    ```
 
