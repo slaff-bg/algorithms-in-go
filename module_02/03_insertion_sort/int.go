@@ -1,4 +1,4 @@
-package bubblesort
+package insertionsort
 
 import (
 	"fmt"
@@ -40,6 +40,7 @@ func TestInt(t *testing.T, sortFn func([]int)) {
 			sort.Ints(want)
 			sortFn(list)
 			errorCount := 0
+
 			if len(list) != len(want) {
 				t.Fatalf("got len %d; want %d", len(list), len(want))
 			}
